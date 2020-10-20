@@ -1,0 +1,79 @@
+body {
+   margin: 0;
+   padding: 0; 
+}
+
+.bg-sup {
+    background-image: linear-gradient(lightblue, lightgrey);   
+    background-repeat: no-repeat;
+    height: 34.6vh;
+}
+
+.bg-sup h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(imagens/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute; 
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
+    /*background-image: url(imagens/cactus.png)*/
+}
+
+.game-over {
+    position: center;
+    text-align: center;
+    font-family: helvetica;
+
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    background-color: rgba(216, 216, 216, 0.301);
+    padding: 10px;
+}
+
+.game-over h1 {
+    color: red;
+    margin-top: 50px;
+}
+
+.game-over p {
+    color: darkblue;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    background-image: url(imagens/background.png);
+    background-repeat:  repeat-x;
+    animation: alideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    margin-top: 243px;
+    height: 26.4vh;
+    width: 100%;
+    background-image: linear-gradient(lightgray, lightblue);
+    bottom: 0;
+}
